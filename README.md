@@ -25,7 +25,10 @@ These predictions are saved to a new CSV file, which you can use for further ana
 ---
 
 ## 📦 **Installation**
+```bash
+pip install -r requirements.txt
 
+```
 
 ### 1. **System Requirements**
 - **RAM**: Minimum 8GB (Recommended 16GB or more for larger models like Mistral-7B)
