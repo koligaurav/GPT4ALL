@@ -47,3 +47,50 @@ pip install -r requirements.txt
    Clone the repository to your local machine using Git:
    ```bash
    git clone https://github.com/your-repo-url.git
+
+    ```
+2.**Navigate to Project Directory**
+   Go to the project directory:
+   ```bash
+   cd your-repo
+   ```
+3.**Create and Activate Virtual Environment**
+   For Windows:
+   ```bash
+   python -m venv venv
+.\venv\Scripts\activate
+   ```
+For Linux/macOS::
+   ```bash
+ python3 -m venv venv
+source venv/bin/activate
+   ```
+4.**Install Dependencies**
+   Install the required libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+### **Model Setup**
+1. **Download the Model**
+- **Mistral-7B GGUF Model (Recommended for systems with >16GB RAM):
+```bash
+https://huggingface.co/Meta-Llama/Mistral-7B-GGUF
+```
+2. ** Place the Model**
+- After downloading, place the .gguf model file in the models_gpt4all folder:
+```bash
+E:/project/models_gpt4all/mistral-7b-openorca.Q4_0.gguf  # or TinyLlama-1.1b-chat-v1.0.Q4_0.gguf
+```
+3. ** Prepare Your Dataset**
+- 1.Your Jobs CSV: Prepare your input dataset (your_jobs.csv). It should have columns like:
+- id, title, description, job_family, seniority, etc.
+- 2.Place the CSV in the data/ folder:
+```bash
+  E:/project/data/your_jobs.csv
+```
+
+
+
+  
